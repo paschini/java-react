@@ -99,6 +99,9 @@
                                 <copy todir="${project.build.directory}/classes/public">
                                     <fileset dir="${project.basedir}/src/main/frontend/build"/>
                                 </copy>
+                                <delete includeEmptyDirs="true">
+                                    <fileset dir="${project.basedir}/src/main/frontend/build"/>
+                                </delete>
                             </target>
                         </configuration>
                         <goals>

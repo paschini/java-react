@@ -9,7 +9,7 @@ Created by following [this guide](https://blogg.kantega.no/webapp-with-create-re
 - [x] Add React to the project
 - [x] Successfully make a call to the backend from react
 - [x] Add the rest call to the frontend
-- [ ] Use Maven to build the project
+- [x] Use Maven to build the project
 - [ ] Make sure hot-reloading works in React out of the box
 - [ ] Add Typescript
 - [ ] Add styling tools (eslint, tslint, prettier)
