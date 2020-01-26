@@ -1,30 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { useMessage } from './Hooks/UseMessage';
+
 function App() {
-  const useMessage = () => {
-    const [message, setMessage] = useState('');
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-      const getMessage = async () => {
-        try {
-          setLoading(false);
-          const result = await fetch('api/hello');
-          return await result.text();
-        } catch (error) {
-          setLoading(true);
-          console.log(error);
-        }
-      };
-
-      getMessage().then(msg => setMessage(msg));
-    }, []);
-
-    return [loading, message];
-  };
-
   const [loading, message] = useMessage();
 
   return (
