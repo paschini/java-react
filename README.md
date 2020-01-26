@@ -7,6 +7,7 @@ Created by following [this guide](https://blogg.kantega.no/webapp-with-create-re
 ## TODO:
 - [x] Create Spring Boot app
 - [x] Add React to the project
+- [x] Successfully make a call to the backend from react
 - [ ] Use Maven to build the project
 - [ ] Make sure hot-reloading works in React out of the box
 - [ ] Add Typescript
